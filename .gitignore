@@ -130,5 +130,5 @@ dist
 .pnp.*
 
 #environment
-.env.production
-.env.development
+#.env.production
+#.env.development
