@@ -80,8 +80,8 @@ const current = (req, res, next) => {
     }
 
     req.user = jwt_payload;    
-    authMiddleware(["ADMIN"])(req, res, async () => {
-    // authMiddleware(["ADMIN","PUBLIC"])(req, res, async () => {
+    // authMiddleware(["ADMIN"])(req, res, async () => {
+    authMiddleware(["ADMIN","PUBLIC"])(req, res, async () => {
       try {
 
         res.json({ message: req.user });

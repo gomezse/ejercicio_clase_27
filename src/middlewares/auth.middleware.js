@@ -8,7 +8,7 @@ export const authMiddleware = (roles) => {
       if (!roles.includes(req.user.role)) {                           
         return res.redirect("/error-login");    
     };    
-    
+    console.log('paso por aca');
     next();    
   }
 };

@@ -29,7 +29,10 @@ role:"ADMIN"
 ENDPOINTS:
 http://localhost:8080/signup
 http://localhost:8080/login
+
+IMPORTANTE: si no se ingresa mediante el login, el token no se genera, por lo tanto, siempre dará como msj "acceso no autorizado"
 http://localhost:8080/api/sessions/current (Si el usuario no tiene el rol ADMIN lleva a la vista de error de login, caso contrario devuelve objeto con info del usuario).
+
 VALIDACION DE ROLE EN MIDDLEWARE auth.middleware.js
 
 
